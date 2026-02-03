@@ -1,0 +1,92 @@
+.editor {
+  border: 2px solid var(--border-strong);
+  box-shadow: 6px 6px 0 var(--shadow);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  padding: 16px;
+}
+
+.editor__header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.editor__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.editor__hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+
+.editor__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field__label {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
+
+.field__required {
+  color: var(--accent-2);
+}
+
+.field__input,
+.field__textarea {
+  width: 100%;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--border-strong);
+  border-radius: 0;
+  padding: 10px 10px;
+  font-family: var(--font-mono);
+  box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.field__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.field__input:focus-visible,
+.field__textarea:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.field__help {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--muted);
+  align-self: flex-end;
+}
+
+.field__error {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--danger);
+}
+
+.editor__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 4px;
+}
